@@ -4,6 +4,6 @@ public class AcPintar extends PerangkatPintar {
     }
 
     public void aturSuhu(int suhu) {
-        System.out.printf("Suhu ruangan diatur menjadi %d derajat", suhu);
+        System.out.printf("\nSuhu ruangan diatur menjadi %d derajat", suhu);
     }
 }
