@@ -5,16 +5,16 @@ public class LayananReguler extends LayananEkspedisi {
 
     double hitungOngkir() {
         double beratEfektif = hitungBeratEfektif();
-        return beratEfektif * 15000; // Tarif per kg untuk layanan reguler
+        return beratEfektif * 15000; 
     }
 
     double hitungOngkir(boolean isMember, int jarakKm){
         double ongkir = hitungOngkir();
         if(isMember){
-            ongkir *= 0.9; // Diskon 10% untuk member
+            ongkir *= 0.9;
         }
         return ongkir + (jarakKm*500);
     }
 
-    
+
 }

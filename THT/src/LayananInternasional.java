@@ -13,11 +13,11 @@ public class LayananInternasional extends LayananEkspedisi{
         double ongkirDasar = beratEfektif * 200000;
         double pajak;
         if (this.nilaiBarangUSD > 50) {
-            pajak = ongkirDasar * 0.2;
+            pajak = ongkirDasar * 0.2; 
         } else {
             pajak = 0;
         }
-        return ongkirDasar;
+        return ongkirDasar + pajak;
     }
     void cetakManifest() {
         System.out.println("Manifest Internasional ke " + this.tujuan + " - Deklarasi Nilai: $" + this.nilaiBarangUSD);
